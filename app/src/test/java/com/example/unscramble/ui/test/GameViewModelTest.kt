@@ -75,6 +75,8 @@ class GameViewModelTest {
 
         viewModel.updateUserGuess(correctPlayerWord)
         viewModel.checkUserGuess()
+
+        //get new state after the change
         currentGameUiState = viewModel.uiState.value
 
         // Assert that checkUserGuess() method updates isGuessedWordWrong is updated correctly.
